@@ -1,425 +1,207 @@
 <!DOCTYPE html>
-<html lang="vi" dir="ltr">
+<!--[if lt IE 7]> <html class="ie6 ie" lang="vi" dir="ltr"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie" lang="vi" dir="ltr"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie" lang="vi" dir="ltr"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie" lang="vi" dir="ltr"> <![endif]-->
+<!--[if !IE]> --> <html lang="vi" dir="ltr"> <!-- <![endif]-->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon"/>
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kết quả học tập | Cổng thông tin đào tạo</title>
-    <style type="text/css" media="all">
-        @import "css/base.css";
-        @import "css/menus.css";
-        @import "css/messages.css";
-        @import "css/theme.css";
-    </style>
-    <style type="text/css" media="all">
-        @import "css/ui_core/min.css";
-        @import "css/ui_core/theme.css";
-        @import url("https://student.uit.edu.vn/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?rcvvay");
-        @import url("https://student.uit.edu.vn/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.resizable.min.css?rcvvay");
-        @import url("https://student.uit.edu.vn/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.dialog.min.css?rcvvay");
-    </style>
-<style type="text/css" media="all">
-@import url("https://student.uit.edu.vn/modules/aggregator/aggregator.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/contrib/ckeditor_accordion/css/ckeditor-accordion.css?rcvvay");
-@import url("https://student.uit.edu.vn/modules/comment/comment.css?rcvvay");
-@import url("https://student.uit.edu.vn/modules/field/theme/field.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/custom/li_lich/css/lilich.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/custom/lookup/css/lookup.css?rcvvay");
-@import url("https://student.uit.edu.vn/modules/node/node.css?rcvvay");
-@import url("https://student.uit.edu.vn/modules/search/search.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/uit_common/css/uit_common.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/daa/modules/custom/uit_dichvu/css/dichvu.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/custom/uit_dkhp/css/uit_dkhp.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/custom/uit_dkphong/css/main.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/custom/uit_sinhvien/css/diemthi.css?rcvvay");
-@import url("https://student.uit.edu.vn/modules/user/user.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/contrib/views/css/views.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/contrib/back_to_top/css/back_to_top.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/contrib/ckeditor/css/ckeditor.css?rcvvay");
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://www.google.com/recaptcha/api.js?hl=vi" async="async" defer="defer"></script>
+<link rel="shortcut icon" href="https://student.uit.edu.vn/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://student.uit.edu.vn/" />
+<link rel="shortlink" href="https://student.uit.edu.vn/" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truy cập bị từ chối | Cổng thông tin đào tạo</title>
+  <style type="text/css" media="all">
+@import url("https://student.uit.edu.vn/modules/system/system.base.css?rihp26");
+@import url("https://student.uit.edu.vn/modules/system/system.menus.css?rihp26");
+@import url("https://student.uit.edu.vn/modules/system/system.messages.css?rihp26");
+@import url("https://student.uit.edu.vn/modules/system/system.theme.css?rihp26");
 </style>
 <style type="text/css" media="all">
-@import url("https://student.uit.edu.vn/sites/all/modules/contrib/ctools/css/ctools.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/custom/uit_sinhvien/css/tracuu.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/libraries/select2/dist/css/select2.min.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/contrib/select2/css/select2_integration.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/libraries/mmenu/main/src/css/jquery.mmenu.all.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/packages/bootstrap-2.3.1/css/bootstrap.min.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/packages/bootstrap-2.3.1/css/bootstrap-responsive.min.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/packages/font-awesome-4.7.0/css/font-awesome.min.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/modules/contrib/mmenu/themes/mm-fresh/styles/mm-fresh.css?rcvvay");
+@import url("https://student.uit.edu.vn/modules/aggregator/aggregator.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/contrib/ckeditor_accordion/css/ckeditor-accordion.css?rihp26");
+@import url("https://student.uit.edu.vn/modules/comment/comment.css?rihp26");
+@import url("https://student.uit.edu.vn/modules/field/theme/field.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/custom/li_lich/css/lilich.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/custom/lookup/css/lookup.css?rihp26");
+@import url("https://student.uit.edu.vn/modules/node/node.css?rihp26");
+@import url("https://student.uit.edu.vn/modules/search/search.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/uit_common/css/uit_common.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/daa/modules/custom/uit_dichvu/css/dichvu.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/custom/uit_dkhp/css/uit_dkhp.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/custom/uit_dkphong/css/main.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/custom/uit_sinhvien/css/diemthi.css?rihp26");
+@import url("https://student.uit.edu.vn/modules/user/user.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/contrib/views/css/views.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/contrib/back_to_top/css/back_to_top.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/contrib/ckeditor/css/ckeditor.css?rihp26");
 </style>
 <style type="text/css" media="all">
-@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/css/open_framework.css?rcvvay");
-@import url("https://student.uit.edu.vn/sites/all/themes/uitpb_daa/css/style.css?rcvvay");
+@import url("https://student.uit.edu.vn/sites/all/modules/contrib/ctools/css/ctools.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/libraries/select2/dist/css/select2.min.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/modules/contrib/select2/css/select2_integration.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/packages/bootstrap-2.3.1/css/bootstrap.min.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/packages/bootstrap-2.3.1/css/bootstrap-responsive.min.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/packages/font-awesome-4.7.0/css/font-awesome.min.css?rihp26");
+</style>
+<style type="text/css" media="all">
+@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/css/open_framework.css?rihp26");
+@import url("https://student.uit.edu.vn/sites/all/themes/uitpb_daa/css/style.css?rihp26");
 </style>
 <style type="text/css" media="print">
-@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/css/open_framework_print.css?rcvvay");
+@import url("https://student.uit.edu.vn/sites/all/themes/open_framework/css/open_framework_print.css?rihp26");
 </style>
-<script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_dxGIfXEaZtiV2AZIXHjVIzl1b6T902aR9PsqVhYwkJg.js"></script>
-<script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_FCCXhE4Xgim7BSBwgMBxsxhnLAr74yGBK1oKnBs703Q.js"></script>
+  <script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_dxGIfXEaZtiV2AZIXHjVIzl1b6T902aR9PsqVhYwkJg.js"></script>
+<script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_bE2roJIKNs6Ja4p4h-iVIfNMGGlTAO4VRZ7A9ADyV9U.js"></script>
 <script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_nuX7DqHyLvecZ1pZo5_FJZAsG25oBapWuNqJ5AQjaIw.js"></script>
-<script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_FJ1F0bbBSebvF2qT53FszH5gbA7Abk3vKgLrZaubGfM.js"></script>
+<script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_Icjte6Sm92KrneXEoWZpsmmI-EoVWidWXc4m__DsjtY.js"></script>
 <script type="text/javascript">
-
-(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-32419117-1", {"cookieDomain":"auto"});ga("send", "pageview");
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-32419117-1", {"cookieDomain":"auto"});ga("set", "page", "/403.html?page=" + document.location.pathname + document.location.search + "&from=" + document.referrer);ga("send", "pageview");
 //--><!]]>
 </script>
-<script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_4OsAhIGd5ykpwBv-Hi_c2gEp8pqXPoxuoy2OhFXpvXY.js"></script>
+<script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_t8ghy_wZmMaBclAwRf1K7QCHvLKc0uE0Yejimx2ZDeA.js"></script>
 <script type="text/javascript" src="https://student.uit.edu.vn/sites/daa/files/js/js_-Ru6Hf6a1kT-hX9KyILYg59SuYVbs3JwWAOqPG6lRJM.js"></script>
 <script type="text/javascript">
-
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"uitpb_daa","theme_token":"-qlZWJgOhH9AhuElHYQcYMmEW-jwe7Nxgy5qRe92_QQ","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"misc\/ui\/jquery.ui.position-1.13.0-backport.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js":1,"misc\/ui\/jquery.ui.dialog-1.13.0-backport.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery.form\/4\/jquery.form.min.js":1,"sites\/all\/modules\/contrib\/select2\/js\/Drupal.select2.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/contrib\/back_to_top\/js\/back_to_top.js":1,"public:\/\/languages\/vi_50EZR6FUi00iErD2-ySQpv_fNsUgvRhzIRmjFkd-ouc.js":1,"misc\/progress.js":1,"sites\/all\/modules\/autologout\/autologout.js":1,"sites\/all\/modules\/memcache\/memcache_admin\/memcache.js":1,"sites\/all\/modules\/custom\/uit_sinhvien\/js\/tracuu.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/libraries\/select2\/dist\/js\/select2.full.min.js":1,"sites\/all\/modules\/contrib\/mmenu\/js\/mmenu.js":1,"sites\/all\/libraries\/mmenu\/hammer\/hammer.js":1,"sites\/all\/libraries\/mmenu\/jquery.hammer\/jquery.hammer.js":1,"sites\/all\/libraries\/mmenu\/main\/src\/js\/jquery.mmenu.min.all.js":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/js\/bootstrap.min.js":1,"sites\/all\/themes\/open_framework\/js\/open_framework.js":1,"sites\/all\/themes\/open_framework\/js\/jquery.placeholder.min.js":1,"sites\/all\/themes\/open_framework\/js\/override.js":1,"sites\/all\/themes\/uitpb_daa\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/li_lich\/css\/lilich.css":1,"sites\/all\/modules\/custom\/lookup\/css\/lookup.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/uit_common\/css\/uit_common.css":1,"sites\/daa\/modules\/custom\/uit_dichvu\/css\/dichvu.css":1,"sites\/all\/modules\/custom\/uit_dkhp\/css\/uit_dkhp.css":1,"sites\/all\/modules\/custom\/uit_dkphong\/css\/main.css":1,"sites\/all\/modules\/custom\/uit_sinhvien\/css\/diemthi.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/custom\/uit_sinhvien\/css\/tracuu.css":1,"sites\/all\/libraries\/select2\/dist\/css\/select2.min.css":1,"sites\/all\/modules\/contrib\/select2\/css\/select2_integration.css":1,"sites\/all\/libraries\/mmenu\/main\/src\/css\/jquery.mmenu.all.css":1,"sites\/all\/libraries\/mmenu\/icomoon\/icomoon.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap.min.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap-responsive.min.css":1,"sites\/all\/themes\/open_framework\/packages\/font-awesome-4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/modules\/contrib\/mmenu\/themes\/mm-fresh\/styles\/mm-fresh.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework.css":1,"sites\/all\/themes\/uitpb_daa\/css\/style.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework_print.css":1}},"autologout":{"timeout":3000000,"timeout_padding":10000,"message":"Your session is about to expire. Do you want to reset it?","redirect_url":"\/user\/login?destination=sinhvien\/tracuu\/kqhoctap\u0026autologout_timeout=1","title":"C\u1ed5ng th\u00f4ng tin \u0111\u00e0o t\u1ea1o Alert","refresh_only":false,"no_dialog":0,"use_alt_logout_method":0},"back_to_top":{"back_to_top_button_trigger":"100","back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"ckeditor_accordion":{"collapseAll":1},"mmenu":{"mmenu_left":{"enabled":"1","title":"Left menu","name":"mmenu_left","blocks":[{"module_delta":"system|user-menu","menu_parameters":{"min_depth":"1"},"title":"\u003Cnone\u003E","collapsed":"0","wrap":"0","module":"system","delta":"user-menu"}],"options":{"classes":"mm-fresh mm-slide","effects":{"mm-slide":"mm-slide"},"slidingSubmenus":true,"clickOpen":{"open":true,"selector":"#menu-icon"},"counters":{"add":true,"update":true},"dragOpen":{"open":true,"pageNode":"body","threshold":100,"maxStartPos":50},"footer":{"add":true,"content":"","title":"Khu ph\u1ed1 6, P. Linh Trung Qu\u1eadn Th\u1ee7 \u0110\u1ee9c, Tp. H\u1ed3 Ch\u00ed Minh","update":true},"header":{"add":true,"content":"","title":"C\u1ed5ng th\u00f4ng tin \u0111\u00e0o t\u1ea1o","update":true},"labels":{"collapse":false},"offCanvas":{"enabled":true,"modal":false,"moveBackground":true,"position":"left","zposition":"front"},"searchfield":{"add":false,"addTo":"menu","search":false,"placeholder":"T\u00ecm ki\u1ebfm","noResults":"No results found.","showLinksOnly":true}},"configurations":{"clone":false,"preventTabbing":false,"panelNodetype":"div, ul, ol","transitionDuration":400,"classNames":{"label":"Label","panel":"Panel","selected":"Selected","buttonbars":{"buttonbar":"anchors"},"counters":{"counter":"Counter"},"fixedElements":{"fixedTop":"FixedTop","fixedBottom":"FixedBottom"},"footer":{"panelFooter":"Footer"},"header":{"panelHeader":"Header","panelNext":"Next","panelPrev":"Prev"},"labels":{"collapsed":"Collapsed"},"toggles":{"toggle":"Toggle","check":"Check"}},"dragOpen":{"width":{"perc":0.80000000000000004,"min":140,"max":440},"height":{"perc":0.80000000000000004,"min":140,"max":880}},"offCanvas":{"menuInjectMethod":"prepend","menuWrapperSelector":"body","pageNodetype":"div","pageSelector":"body \u003E div"}},"custom":[],"position":"left"}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"select_2":{"excludes":{"by_id":{"values":["edit-ktx-vitri","#^edit-diachi-tamtru-#","#^edit-diachi-#"],"reg_exs":[]},"by_class":[],"by_selectors":[]},"branch":4,"default_settings":{"separator":"\u00b6","jqui_sortable":false,"dropdownAutoWidth":true,"width":"element","containerCssClass":"","minimumResultsForSearch":"15"},"process_all_selects_on_page":true,"no_version_check":false,"elements":[],"settings_updated":false},"urlIsAjaxTrusted":{"\/sinhvien\/kqhoctap":true}});
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"uitpb_daa","theme_token":"Gw_QuRWGQXc4HTw4-ysv-rY78PQUBF3rTIVMDy2GIOc","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery.form\/4\/jquery.form.min.js":1,"sites\/all\/modules\/contrib\/select2\/js\/Drupal.select2.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/contrib\/back_to_top\/js\/back_to_top.js":1,"public:\/\/languages\/vi_50EZR6FUi00iErD2-ySQpv_fNsUgvRhzIRmjFkd-ouc.js":1,"misc\/progress.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/libraries\/select2\/dist\/js\/select2.full.min.js":1,"sites\/all\/modules\/contrib\/captcha\/captcha.js":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/js\/bootstrap.min.js":1,"sites\/all\/themes\/open_framework\/js\/open_framework.js":1,"sites\/all\/themes\/open_framework\/js\/jquery.placeholder.min.js":1,"sites\/all\/themes\/open_framework\/js\/override.js":1,"sites\/all\/themes\/uitpb_daa\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/li_lich\/css\/lilich.css":1,"sites\/all\/modules\/custom\/lookup\/css\/lookup.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/uit_common\/css\/uit_common.css":1,"sites\/daa\/modules\/custom\/uit_dichvu\/css\/dichvu.css":1,"sites\/all\/modules\/custom\/uit_dkhp\/css\/uit_dkhp.css":1,"sites\/all\/modules\/custom\/uit_dkphong\/css\/main.css":1,"sites\/all\/modules\/custom\/uit_sinhvien\/css\/diemthi.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/select2\/dist\/css\/select2.min.css":1,"sites\/all\/modules\/contrib\/select2\/css\/select2_integration.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap.min.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap-responsive.min.css":1,"sites\/all\/themes\/open_framework\/packages\/font-awesome-4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework.css":1,"sites\/all\/themes\/uitpb_daa\/css\/style.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework_print.css":1}},"back_to_top":{"back_to_top_button_trigger":"100","back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"ckeditor_accordion":{"collapseAll":1},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"select_2":{"excludes":{"by_id":{"values":["edit-ktx-vitri","#^edit-diachi-tamtru-#","#^edit-diachi-#","#^edit-thutietphong#"],"reg_exs":[]},"by_class":[],"by_selectors":[]},"branch":4,"default_settings":{"separator":"\u00b6","jqui_sortable":false,"dropdownAutoWidth":true,"width":"element","containerCssClass":"","minimumResultsForSearch":"15"},"process_all_selects_on_page":true,"no_version_check":false,"elements":[],"settings_updated":false},"urlIsAjaxTrusted":{"\/sinhvien\/kqhoctap?destination=sinhvien\/tracuu\/kqhoctap":true}});
 //--><!]]>
 </script>
-<!--[if IE 7]>
+  <!--[if IE 7]>
     <![endif]-->
-<!-- IE Fix for HTML5 Tags -->
-<!--[if lt IE 9]>
-<script src="/sites/all/themes/open_framework/js/html5shiv.js"></script>
-<![endif]-->
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="/sites/all/themes/open_framework/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
 
-<body class="html not-front logged-in no-sidebars page-sinhvien page-sinhvien-tracuu page-sinhvien-tracuu-kqhoctap      borders roundedcorners" >
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-sinhvien page-sinhvien-tracuu page-sinhvien-tracuu-kqhoctap      borders roundedcorners" >
     <a href="#main" class="element-invisible element-focusable">Skip to content</a>
 <a href="#main-nav" class="element-invisible element-focusable" data-target=".nav-collapse" data-toggle="collapse">Skip to navigation</a>
 <!-- /#skipnav -->
 <!-- /#admin-shortcuts -->
 <div id="header" class="clearfix header" role="banner">
-    <div class="container">
+  <div class="container">
     <div class="row">
-    <div class="header-section span12">
+      <div class="header-section span12">
                 <div id="logo" class="site-logo"> <a href="/" title="Trang chủ" rel="home"> <img src="https://student.uit.edu.vn/sites/daa/files/banner.png" alt="" role="presentation" /> </a></div>
                 <!-- /#logo -->
                         <div id="site" class="hide">
-        <div id="name"><a href="/">Cổng thông tin đào tạo</a></div>
+          <div id="name"><a href="/">Cổng thông tin đào tạo</a></div>
         </div>
                 <!-- /#name-and-slogan -->
                 <!-- /#header-content -->
-    </div>
+      </div>
             <!-- /#site-login -->
     </div>
-    </div>
+  </div>
 </div>
 <!-- /#header -->
 <div id="main-menu" class="clearfix site-main-menu">
-    <div class="container">
-        <div class="navbar">
+  <div class="container">
+    <div class="navbar">
             <div class="navbar-inner">
                                 <button aria-label="Navigation menu" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="hide">Navigation menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <div class="nav-collapse collapse">
-        <nav id="main-nav" role="navigation">
+          <nav id="main-nav" role="navigation">
                         <ul class="menu nav"><li class="first leaf"><a href="/" title="">Home</a></li>
-<li class="expanded dropdown"><a href="http://daa.uit.edu.vn/content/cong-thong-tin-dao-tao" title="Giới thiệu" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Giới thiệu <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/content/cong-thong-tin-dao-tao">Cổng thông tin đào tạo</a></li>
-<li class="leaf"><a href="/content/cac-nganh-dao-tao" title="Các ngành đào tạo">Các ngành đào tạo</a></li>
-<li class="last leaf"><a href="/content/chuc-nang-nhiem-vu-cua-phong-dao-tao-dai-hoc" title="Phòng đào tạo đại học">Phòng đào tạo đại học</a></li>
-</ul></li>
-<li class="expanded dropdown"><a href="/thongbao" title="Thông Báo Đào tạo" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Thông báo <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/thongbaochinhquy" title="Thông Báo Dành Cho Hệ Chính Quy">Đại học chính quy</a></li>
-<li class="leaf"><a href="/thong-bao-vb2">Văn bằng 2</a></li>
-<li class="last leaf"><a href="/thongbaotuxa" title="Thông Báo Dành Cho Hệ Đào Tạo Từ Xa Qua Mạng">Đào tạo từ xa</a></li>
-</ul></li>
-<li class="expanded dropdown"><a href="/quydinh" title="Quy chế - Quy Định" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Quy định - Hướng dẫn <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/qui-che-qui-dinh-qui-trinh">Quy chế, quy định đào tạo đại học</a></li>
-<li class="leaf"><a href="/content/quy-che-tuyen-sinh-dai-hoc-txqm">Quy chế tuyển sinh đại học TXQM</a></li>
-<li class="leaf"><a href="https://daa.uit.edu.vn/sites/daa/files/uploads/53_qd_dhcntt_19_2_2019scan.pdf" target="_blank">Qui chế về công tác giáo trình</a></li>
-<li class="leaf"><a href="/content/quy-dinh-dao-tao-ngan-han">Quy định đào tạo ngắn hạn</a></li>
-<li class="leaf"><a href="/content/quy-trinh-danh-cho-can-bo-giang-day">Quy trình cho giảng viên</a></li>
-<li class="leaf"><a href="/thongbao/mot-so-quy-trinh-danh-cho-sinh-vien">Quy trình cho sinh viên</a></li>
-<li class="leaf"><a href="/thongbao/huong-dan-tra-cuu-va-xac-minh-van-bang-tot-nghiep-dai-hoc">Tra cứu và xác minh VB tốt nghiệp ĐH</a></li>
-<li class="leaf"><a href="/content/huong-dan-sinh-vien-dai-hoc-he-chinh-quy-thuc-hien-cac-quy-dinh-ve-chuan-qua-trinh-va-chuan">Hướng dẫn sinh viên về các quy định ngoại ngữ</a></li>
-<li class="last leaf"><a href="/thongbao/huong-dan-trien-khai-day-va-hoc-qua-mang-trong-thoi-gian-phong-chong-dich-covid-19">Hướng dẫn triển khai dạy và học qua mạng</a></li>
-</ul></li>
+<li class="collapsed"><a href="http://daa.uit.edu.vn/content/cong-thong-tin-dao-tao" title="Giới thiệu">Giới thiệu</a></li>
+<li class="collapsed"><a href="/thongbao" title="Thông Báo Đào tạo">Thông báo</a></li>
+<li class="collapsed"><a href="/quydinh" title="Quy chế - Quy Định">Quy định - Hướng dẫn</a></li>
 <li class="leaf"><a href="/bieu-do-ke-hoach-dao-tao" title="Kế Hoạch Năm">Kế hoạch năm</a></li>
-<li class="expanded dropdown"><a href="/chuongtrinhdaotao" title="CT Đào Tạo" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Chương trình đào tạo <span class="caret"></span></a><ul class="dropdown-menu"><li class="first expanded dropdown-submenu"><a href="/chinhquy" title="Đào Tạo Đại Học Chính Quy" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Hệ chính quy</a><ul class="dropdown-menu"><li class="first leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2021">CTĐT Khoá 2021</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2020">CTĐT Khoá 2020</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2019">CTĐT Khoá 2019</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2018">CTĐT Khoá 2018</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2017">CTĐT Khoá 2017</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2016">CTĐT Khoá 2016</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2015">CTĐT Khoá 2015</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2014">CTĐT Khoá 2014</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2013">CTĐT Khoá 2013</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/ctdt-khoa-2012">CTĐT Khoá 2012</a></li>
-<li class="leaf"><a href="/content/chuong-trinh-dao-tao-cu">CTĐT Khoá 2011 trở về trước</a></li>
-<li class="leaf"><a href="/danh-muc-mon-hoc-dai-hoc">Danh mục môn học</a></li>
-<li class="last leaf"><a href="/content/bang-tom-tat-mon-hoc">Tóm tắt môn học</a></li>
-</ul></li>
-<li class="last expanded dropdown-submenu"><span class="dropdown-toggle nolink" data-toggle="dropdown" data-target="#" tabindex="0">Hệ từ xa</span><ul class="dropdown-menu"><li class="first leaf"><a href="/chuong-trinh-dao-tao/cu-nhan-tu-xa">Cử nhân CNTT</a></li>
-<li class="leaf"><a href="/chuong-trinh-dao-tao/van-bang-2">Văn bằng 2</a></li>
-<li class="last leaf"><a href="/chuong-trinh-dao-tao/lien-thong-dh">Liên thông ĐH</a></li>
-</ul></li>
-</ul></li>
-<li class="expanded dropdown"><a href="/thoikhoabieu" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Lịch <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/thoikhoabieu">TKB</a></li>
-<li class="last leaf"><a href="/lichphong">Lịch phòng</a></li>
-</ul></li>
-<li class="expanded active-trail dropdown"><a href="/user" title="Lý lịch sinh viên." class="active-trail dropdown-toggle" data-toggle="dropdown" data-target="#">Sinh viên <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/sinhvien/bang-dieu-khien">Bảng điều khiển</a></li>
-<li class="leaf"><a href="/sinhvien/tkb">Lịch TKB - Lịch thi</a></li>
-<li class="leaf"><a href="/sinhvien/thongtin">Lý Lịch - Sức khỏe - Hồ sơ SV</a></li>
-<li class="leaf"><a href="/tracuu/hocphi">Thông tin học phí</a></li>
-<li class="leaf"><a href="/sinhvien/phieukhaosat">Danh sách phiếu khảo sát</a></li>
-<li class="leaf active-trail"><a href="/sinhvien/kqhoctap" title="Xem kết quả học tập" class="active-trail active">Kết quả học tập</a></li>
-<li class="leaf"><a href="/sinhvien/baohiem">Thông tin BH</a></li>
-<li class="leaf"><a href="/sinhvien/dkhp/thongtindangky">Thông tin ĐKHP</a></li>
-<li class="leaf"><a href="/sinhvien/tracuu/drl">Điểm rèn luyện</a></li>
-<li class="leaf"><a href="/sinhvien/lookup/office365">Thông tin tài khoản Office365</a></li>
-<li class="leaf"><a href="/sinhvien/khaosat/monhoc">Khảo sát mở lớp</a></li>
-<li class="leaf"><a href="/sinhvien/chungchi">Xác nhận Chứng chỉ</a></li>
-<li class="leaf"><a href="/sinhvien/dkngoaitru">Đăng ký ở ngoại trú</a></li>
-<li class="leaf"><a href="/sinhvien/khoaluan-totnghiep">Nộp KLTN</a></li>
-<li class="leaf"><a href="/sinhvien/dkphuckhao">Phúc khảo</a></li>
-<li class="last leaf"><a href="/sinhvien/dkgiahanhp">ĐK Gia hạn Học Phí</a></li>
-</ul></li>
-<li class="last leaf"><a href="/contact">Liên hệ - Góp ý</a></li>
+<li class="collapsed"><a href="/chuongtrinhdaotao" title="CT Đào Tạo">Chương trình đào tạo</a></li>
+<li class="last collapsed"><a href="/thoikhoabieu">Lịch</a></li>
 </ul> 
             <!-- /#primary-menu -->
-                                </nav>
+                                  </nav>
         </div>
-                            </div>
-        </div>
-</div>
+                              </div>
+          </div>
+  </div>
 </div>
 <!-- /#main-menu -->
 
 
 
 <div id="main" class="clearfix main" role="main">
-    <div class="container">
+  <div class="container">
                 <div id="main-content" class="row main-content">
-            <div id="content" class="mc-content span12">
-        <div id="content-wrapper" class="content-wrapper">
-        <div id="content-head" class="row-fluid content-head">
-                                                <h1 class="title" id="page-title"> Kết quả học tập </h1>
-                                                                                </div>
-                                        <div id="content-body" class="row-fluid content-body"> <div class="region region-content clearfix">
-<div id="block-system-main" class="clearfix block block-system">       <div class="content"> <form action="/sinhvien/kqhoctap" method="post" id="uit-sinhvien-tracuu-form" accept-charset="UTF-8"><div><center><h1><strong>BẢNG ĐIỂM SINH VIÊN</strong></h1></center><div style="float:right; margin-top:-20px;"><input type="button" value="In bảng điểm" onclick="window.open('https://student.uit.edu.vn/print/sinhvien/kqhoctap/?sid=19521338')"></div><table cellpadding="0" cellspacing="0" border="0" bordercolor="FFFFFF" width="100%" ><tr><td>Họ và tên:</td><td><strong>Nguyễn Quốc Đạt</strong></td><td>Ngày sinh:</td><td><strong>06-10-2001</strong></td><td>Giới tính:</td> <td><strong>Nam</strong></td></tr><tr><td>Mã SV:</td><td><strong>19521338</strong></td><td>Lớp sinh hoạt:</td><td><strong>KHCL2019.1</strong></td><td>Khoa:</td><td><strong>KHMT</strong></td></tr><tr><td>Bậc đào tạo:</td><td><strong>Đại Học</strong></td><td>Hệ đào tạo:</td><td colspan="3"><strong>CLC</strong></td></tr></table><table cellpadding="2" cellspacing="0" border="1" bordercolor="#000000"  width="100%" ><tr><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;Mã HP</th><th>&nbsp;Tên học phần</th><th>&nbsp;Tín chỉ</th>
-            <th>&nbsp;Điểm QT</th><th>&nbsp;Điểm GK</th><th>&nbsp;Điểm TH</th><th>&nbsp;Điểm CK</th><th>&nbsp;Điểm HP</th><th>&nbsp;Ghi chú</th></tr><tr><td colspan="10"><strong>&nbsp;&nbsp;&nbsp;Học kỳ 1 - Năm học 2019-2020 </strong></td></tr><tr><td align='center'>1</td><td align='center' title='ENGA2.K11'>ENGA2</td><td>&nbsp;Anh văn sơ cấp 2</td><td align='center'></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center'>7.3</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>2</td><td align='center' title='IT001.K11.KHCL'>IT001</td><td>&nbsp;Nhập môn lập trình</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 10%'>10</td>
-                        <td align='center' title='Trọng số: 20%'>4</td>
-                        <td align='center' title='Trọng số: 30%'>10</td>
-                        <td align='center' title='Trọng số: 40%'>9</td>
-                        <td align='center'>8.4</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>3</td><td align='center' title='IT009.K14.CLC'>IT009</td><td>&nbsp;Giới thiệu ngành</td><td align='center'>2</td>
-                        <td align='center' title='Trọng số: 50%'>8</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>7</td>
-                        <td align='center'>7.5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>4</td><td align='center' title='MA003.K11.KHCL'>MA003</td><td>&nbsp;Đại số tuyến tính</td><td align='center'>3</td>
-                        <td align='center' title='Trọng số: 20%'>8</td>
-                        <td align='center' title='Trọng số: 20%'>6</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 60%'>4.5</td>
-                        <td align='center'>5.5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>5</td><td align='center' title='MA006.K11.KHCL'>MA006</td><td>&nbsp;Giải tích</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 20%'>7</td>
-                        <td align='center' title='Trọng số: 20%'>5</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 60%'>5.5</td>
-                        <td align='center'>5.7</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>6</td><td align='center' title='PE001.K111'>PE001</td><td>&nbsp;Giáo dục thể chất 1</td><td align='center'></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>7</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 100%'>8</td>
-                        <td align='center'>7.5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>7</td><td align='center' title='SS004.K15.CLC'>SS004</td><td>&nbsp;Kỹ năng nghề nghiệp</td><td align='center'>2</td>
-                        <td align='center' title='Trọng số: 20%'>8.5</td>
-                        <td align='center' title='Trọng số: 30%'>9.5</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>8.5</td>
-                        <td align='center'>8.8</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;<strong>Trung bình học kỳ</strong</td><td align='center'><strong>15</strong></td>
-                    <td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'><strong>7.03</strong></td><td>&nbsp;</td></tr><tr><td colspan="10"><strong>&nbsp;&nbsp;&nbsp;Học kỳ 2 - Năm học 2019-2020 </strong></td></tr><tr><td align='center'>1</td><td align='center' title='IT002.K21.ATCL'>IT002</td><td>&nbsp;Lập trình hướng đối tượng</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 20%'>7.5</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 30%'>6</td>
-                        <td align='center' title='Trọng số: 50%'>4</td>
-                        <td align='center'>5.3</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>2</td><td align='center' title='IT003.K22.TMCL'>IT003</td><td>&nbsp;Cấu trúc dữ liệu và giải thuật</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 20%'>8</td>
-                        <td align='center' title='Trọng số: 20%'>8</td>
-                        <td align='center' title='Trọng số: 20%'>0</td>
-                        <td align='center' title='Trọng số: 40%'>8</td>
-                        <td align='center'>6.4</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>3</td><td align='center' title='MA004.K21.KHCL'>MA004</td><td>&nbsp;Cấu trúc rời rạc</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 40%'>8</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 60%'>5.5</td>
-                        <td align='center'>6.5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>4</td><td align='center' title='MA005.K21.KHCL'>MA005</td><td>&nbsp;Xác suất thống kê</td><td align='center'>3</td>
-                        <td align='center' title='Trọng số: 40%'>9.5</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 60%'>2</td>
-                        <td align='center'>5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>5</td><td align='center' title='PE002.K29'>PE002</td><td>&nbsp;Giáo dục thể chất 2</td><td align='center'></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 100%'>7</td>
-                        <td align='center'>7</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>6</td><td align='center' title='SS007.K26'>SS007</td><td>&nbsp;Triết học Mác – Lênin</td><td align='center'>3</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>7.5</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>5</td>
-                        <td align='center'>6.3</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;<strong>Trung bình học kỳ</strong</td><td align='center'><strong>18</strong></td>
-                    <td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'><strong>5.93</strong></td><td>&nbsp;</td></tr><tr><td colspan="10"><strong>&nbsp;&nbsp;&nbsp;Học kỳ 1 - Năm học 2020-2021 </strong></td></tr><tr><td align='center'>1</td><td align='center' title='CS115.L11.KHCL'>CS115</td><td>&nbsp;Toán cho Khoa học máy tính</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 50%'>1.5</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>8.5</td>
-                        <td align='center'>5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>2</td><td align='center' title='IT004.L11.KHCL'>IT004</td><td>&nbsp;Cơ sở dữ liệu</td><td align='center'>4</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 20%'>6</td>
-                        <td align='center' title='Trọng số: 30%'>10</td>
-                        <td align='center' title='Trọng số: 50%'>2</td>
-                        <td align='center'>5.2</td>
-                        <td>&nbsp;</td></tr><tr style="background-color:#ffbfdf;"><td align='center'>3</td><td align='center' title='IT005.L11.PMCL'>IT005</td><td>&nbsp;Nhập môn mạng máy tính</td><td align='center'>4</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 25%'>5.5</td>
-                        <td align='center' title='Trọng số: 25%'>0</td>
-                        <td align='center' title='Trọng số: 50%'>4</td>
-                        <td align='center'>3.4</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>4</td><td align='center' title='IT012.L11.KHCL'>IT012</td><td>&nbsp;Tổ chức và Cấu trúc Máy tính II</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 10%'>7</td>
-                        <td align='center' title='Trọng số: 20%'>8.5</td>
-                        <td align='center' title='Trọng số: 20%'>6</td>
-                        <td align='center' title='Trọng số: 50%'>6</td>
-                        <td align='center'>6.6</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>5</td><td align='center' title='SS003.L14'>SS003</td><td>&nbsp;Tư tưởng Hồ Chí Minh</td><td align='center'>2</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>8</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>6</td>
-                        <td align='center'>7</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>6</td><td align='center' title='SS010.L11'>SS010</td><td>&nbsp;Lịch sử Đảng Cộng sản Việt Nam</td><td align='center'>2</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>6</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>4</td>
-                        <td align='center'>5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;<strong>Trung bình học kỳ</strong</td><td align='center'><strong>20</strong></td>
-                    <td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'><strong>5.24</strong></td><td>&nbsp;</td></tr><tr><td colspan="10"><strong>&nbsp;&nbsp;&nbsp;Học kỳ 2 - Năm học 2020-2021 </strong></td></tr><tr><td align='center'>1</td><td align='center' title='CS111.L22.KHCL'>CS111</td><td>&nbsp;Nguyên lý và phương pháp lập trình</td><td align='center'>4</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>7</td>
-                        <td align='center' title='Trọng số: 50%'>8</td>
-                        <td align='center'>7.5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>2</td><td align='center' title='CS112.L22.KHCL'>CS112</td><td>&nbsp;Phân tích và thiết kế thuật toán</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 40%'>1.5</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 60%'>7.5</td>
-                        <td align='center'>5.1</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>3</td><td align='center' title='CS117.L22.KHCL'>CS117</td><td>&nbsp;Tư duy tính toán</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 50%'>8</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>9.5</td>
-                        <td align='center'>8.8</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>4</td><td align='center' title='ENG01.2020.2.M'>ENG01</td><td>&nbsp;Anh văn 1</td><td align='center'>4</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center'>Miễn</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>5</td><td align='center' title='IT007.L21.KHCL'>IT007</td><td>&nbsp;Hệ điều hành</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 15%'>9.5</td>
-                        <td align='center' title='Trọng số: 15%'>9</td>
-                        <td align='center' title='Trọng số: 20%'>7.5</td>
-                        <td align='center' title='Trọng số: 50%'>9.5</td>
-                        <td align='center'>9</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;<strong>Trung bình học kỳ</strong</td><td align='center'><strong>16</strong></td>
-                    <td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'><strong>7.6</strong></td><td>&nbsp;</td></tr><tr><td colspan="10"><strong>&nbsp;&nbsp;&nbsp;Học kỳ 1 - Năm học 2021-2022 </strong></td></tr><tr><td align='center'>1</td><td align='center' title='CS114.M11.KHCL'>CS114</td><td>&nbsp;Máy học</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 40%'>10</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 30%'>10</td>
-                        <td align='center' title='Trọng số: 30%'>6</td>
-                        <td align='center'>8.8</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>2</td><td align='center' title='CS116.M11.KHCL'>CS116</td><td>&nbsp;Lập trình Python cho Máy học</td><td align='center'>4</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>0</td>
-                        <td align='center' title='Trọng số: 50%'>9</td>
-                        <td align='center'>4.5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>3</td><td align='center' title='CS231.M13.KHCL'>CS231</td><td>&nbsp;Nhập môn Thị giác máy tính</td><td align='center'>4</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 30%'>8</td>
-                        <td align='center' title='Trọng số: 70%'>8.5</td>
-                        <td align='center'>8.4</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>4</td><td align='center' title='IT005.M11.PMCL'>IT005</td><td>&nbsp;Nhập môn mạng máy tính</td><td align='center'>4</td>
-                        <td align='center' title='Trọng số: 25%'>5.5</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 25%'>8.5</td>
-                        <td align='center' title='Trọng số: 50%'>5.5</td>
-                        <td align='center'>6.3</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>5</td><td align='center' title='SS008.M15'>SS008</td><td>&nbsp;Kinh tế chính trị Mác – Lênin</td><td align='center'>2</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>8</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>7</td>
-                        <td align='center'>7.5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>6</td><td align='center' title='SS009.M16'>SS009</td><td>&nbsp;Chủ nghĩa xã hội khoa học</td><td align='center'>2</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>8</td>
-                        <td align='center' title=''></td>
-                        <td align='center' title='Trọng số: 50%'>9</td>
-                        <td align='center'>8.5</td>
-                        <td>&nbsp;</td></tr><tr><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;<strong>Trung bình học kỳ</strong</td><td align='center'><strong>20</strong></td>
-                    <td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'><strong>7.2</strong></td><td>&nbsp;</td></tr><tr><td colspan="10"><strong>&nbsp;&nbsp;&nbsp;Học kỳ 2 - Năm học 2021-2022 </strong></td></tr><tr><td align='center'>1</td><td align='center' title='SS006.M22'>SS006</td><td>&nbsp;Pháp luật đại cương</td><td align='center'>2</td>
-                        <td align='center' title=''>&nbsp;</td>
-                        <td align='center' title='Trọng số: 40%'>7</td>
-                        <td align='center' title=''>&nbsp;</td>
-                        <td align='center' title=''>&nbsp;</td>
-                        <td align='center'>&nbsp;</td><td>&nbsp;</td></tr><tr><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;<strong>Trung bình học kỳ</strong</td><td align='center'><strong>0</strong></td>
-                    <td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td align='center'><strong>0</strong></td><td>&nbsp;</td></tr><tr><td colspan=3><strong>&nbsp;&nbsp;Số tín chỉ đã học</strong></td><td align='center'><strong>85</strong></td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td colspan=3><strong>&nbsp;&nbsp;Số tín chỉ tích lũy</strong></td><td align='center'><strong>85</strong></td><td align='center'>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td colspan=3><strong>&nbsp;&nbsp;Điểm trung bình chung</strong></td><td align='center'>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td align='center'>&nbsp;</td><td>&nbsp;</td><td align='center'><strong>6.69</strong></td><td>&nbsp;</td></tr></table><font color="red"><strong>Lưu ý:<br> &nbsp;&nbsp;&nbsp; Các môn có tô màu là những môn có học lại hoặc cải thiện (không tính vào điểm trung bình chung).</strong></font><input type="hidden" name="form_build_id" value="form-KE_5k2pwyJ0xbfyDFZUmG7YzQ6hWcsONXUqmGeqChb0" />
-<input type="hidden" name="form_token" value="_CfCc8rE4bRT4TDBTcSLnbYxtK6ONs-BKlJR8ScVON4" />
-<input type="hidden" name="form_id" value="uit_sinhvien_tracuu_form" />
-</div></form> </div>
-</div></div>
-<!-- /.region -->
+            <div id="sidebar-first" class="sidebar span3 site-sidebar-first">
+        <div class="row-fluid"><div class="region region-sidebar-first clearfix">
+  <div id="block-user-login" class="clearfix block block-user">     <h2>Đăng Nhập</h2>
+      <div class="content"> <form action="/sinhvien/kqhoctap?destination=sinhvien/tracuu/kqhoctap" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Tên truy cập <span class="form-required" title="Trường dữ liệu này là bắt buộc.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+<div class="description">Dùng tài khoản chứng thực</div>
 </div>
-                                                                                                </div>
-        <!-- /#content-wrap --> 
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Mật khẩu <span class="form-required" title="Trường dữ liệu này là bắt buộc.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+<div class="description">Mật khẩu chứng thực</div>
+</div>
+<div class="item-list"></div><input type="hidden" name="form_build_id" value="form-S4x6O9hGzaElDMZnE_mtVY3ArBHrS7qvG8Rayk8lHc8" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="captcha"><input type="hidden" name="captcha_sid" value="85084790" />
+<input type="hidden" name="captcha_token" value="7e8f80f39b2ac9dae25504351a4b3688" />
+<input type="hidden" name="captcha_response" value="Google no captcha" />
+<div class="g-recaptcha" data-sitekey="6Ld5CJIUAAAAAM9oB1JUS5hrag1f0hKsoLPF-O75" data-theme="light" data-type="image"></div><noscript>
+  <div style="width: 302px; height: 352px;">
+    <div style="width: 302px; height: 352px; position: relative;">
+      <div style="width: 302px; height: 352px; position: absolute;">
+        <iframe src="https://www.google.com/recaptcha/api/fallback?k=6Ld5CJIUAAAAAM9oB1JUS5hrag1f0hKsoLPF-O75&amp;hl=vi" frameborder="0" scrolling="no" style="width: 302px; height:352px; border-style: none;"></iframe>
+      </div>
+      <div style="width: 250px; height: 80px; position: absolute; border-style: none; bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">
+        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 80px; border: 1px solid #c1c1c1; margin: 0px; padding: 0px; resize: none;" value=""></textarea>
+      </div>
     </div>
-    <!-- /#content -->
-        </div>
-        </div>
+  </div>
+</noscript>
+<input type="hidden" name="captcha_cacheable" value="1" />
+</div><div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Đăng nhập" class="form-submit" /></div></div></form> </div>
+</div>
+</div>
+ <!-- /.region -->
+</div>
+      </div>
+      <!-- /#sidebar-first -->
+            <div id="content" class="mc-content span9">
+        <div id="content-wrapper" class="content-wrapper">
+          <div id="content-head" class="row-fluid content-head">
+                                                <h1 class="title" id="page-title"> Truy cập bị từ chối </h1>
+                                                                                  </div>
+                                        <div id="content-body" class="row-fluid content-body"> <div class="region region-content clearfix">
+  <div id="block-system-main" class="clearfix block block-system">       <div class="content"> Bạn không có quyền truy cập trang này. </div>
+</div></div>
+ <!-- /.region -->
+  </div>
+                                                                                                  </div>
+        <!-- /#content-wrap --> 
+      </div>
+      <!-- /#content -->
+          </div>
+          </div>
 </div>
 <!-- /#main, /#main-wrapper -->
 
 
 <div id="footer" class="clearfix site-footer" role="contentinfo">
-<div class="container">
+  <div class="container">
     <div id="footer-content" class="row-fluid footer-content"> <div class="region region-footer clearfix">
-<div id="block-block-3" class="clearfix block block-block">       <div class="content"> <p class="rtecenter"><span style="font-size:16px"><span style="font-family:tahoma,geneva,sans-serif"><strong>PH&Ograve;NG Đ&Agrave;O TẠO ĐẠI HỌC</strong></span></span><br />
+  <div id="block-block-3" class="clearfix block block-block">       <div class="content"> <p class="rtecenter"><span style="font-size:16px"><span style="font-family:tahoma,geneva,sans-serif"><strong>PH&Ograve;NG Đ&Agrave;O TẠO ĐẠI HỌC</strong></span></span><br />
 Ph&ograve;ng A120, Trường Đại học C&ocirc;ng nghệ Th&ocirc;ng tin.<br />
 Khu phố 6, P.Linh Trung, Q.Thủ Đức, TP.Hồ Ch&iacute; Minh.<br />
 Điện thoại: <strong>(028) 372 51993, Ext: 113</strong>(Hệ từ xa qua mạng), <strong>112</strong>(Hệ ch&iacute;nh quy).<br />
 Email: <strong><a href="mailto:phongdaotaodh@uit.edu.vn">phongdaotaodh@uit.edu.vn</a></strong></p>
+ </div>
 </div>
 </div>
-</div>
-<!-- /.region -->
-</div>
-</div>
+ <!-- /.region -->
+ </div>
+  </div>
 </div>
 <!-- /#footer -->
-<form id="autologout-cache-check"><input type="hidden" id="autologout-cache-check-bit" value="0" /></form>
-<nav id="mmenu_left" class="mmenu-nav clearfix">
-<ul>
-                                    <ul class="mmenu-mm-list-level-1"><li class="mmenu-mm-list-mlid-1629 mmenu-mm-list-path-node-4099"><a href="/sinhvien/bang-dieu-khien" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Bảng điều khiển</span></a></li><li class="mmenu-mm-list-mlid-2426 mmenu-mm-list-path-sinhvien-dangky-totnghiep"><a href="/sinhvien/dangky-totnghiep" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Đăng ký Xét Tốt nghiệp</span></a></li><li class="mmenu-mm-list-mlid-2424 mmenu-mm-list-path-sinhvien-dangky-hocbong-kkht"><a href="/sinhvien/dangky-hocbong-kkht" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">ĐK Học bổng KKHT</span></a></li><li class="mmenu-mm-list-mlid-2425 mmenu-mm-list-path-sinhvien-dangky-hocbong-nns"><a href="/sinhvien/dangky-hocbong-nns" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">ĐK Học bổng NNS</span></a></li><li class="mmenu-mm-list-mlid-2255 mmenu-mm-list-path-dkcoithi"><a href="/dkcoithi" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Lịch Coi Thi - ĐK Coi thi</span></a></li><li class="mmenu-mm-list-mlid-1344 mmenu-mm-list-path-sinhvien-dkhp-dangky"><a href="/sinhvien/dkhp/dangky" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Đăng ký học phần</span></a></li><li class="mmenu-mm-list-mlid-1229 mmenu-mm-list-path-sinhvien-dkbangdiem"><a href="/sinhvien/dkbangdiem" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Đăng ký bảng điểm</span></a></li><li class="mmenu-mm-list-mlid-2 mmenu-mm-list-path-user"><a href="/user" class="mmenu-mm-list "><i class="icon-profile"></i><span class="mmenu-block-title">Thông tin tài khoản</span></a></li><li class="mmenu-mm-list-mlid-1428 mmenu-mm-list-path-sinhvien-dkshcd"><a href="/sinhvien/dkshcd" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Đăng ký SHCD</span></a></li><li class="mmenu-mm-list-mlid-15 mmenu-mm-list-path-user-logout"><a href="/user/logout" class="mmenu-mm-list "><i class="icon-unlocked"></i><span class="mmenu-block-title">Đăng xuất</span></a></li></ul>                    </ul>
-</nav>
-</body>
+  </body>
 
 </html>
